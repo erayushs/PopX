@@ -1,4 +1,3 @@
-import React from "react";
 import profileImage from "./assets/ellipse.png";
 import addImage from "./assets/addImage.svg";
 
