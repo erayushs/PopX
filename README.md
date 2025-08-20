@@ -1,69 +1,48 @@
-# React + TypeScript + Vite
+# 🚀 PopX Authentication UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React + TypeScript** authentication UI with **Sign In** and **Create Account** flows.  
+Built with **TailwindCSS** for styling and **React Router** for navigation.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18-blue?logo=react)  
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0-38B2AC?logo=tailwind-css)  
+![License](https://img.shields.io/badge/license-MIT-green)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔑 **Sign In Page**
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  - Email & password input with validation
+  - Disabled login button until form is valid
+  - Inline error message for invalid email
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 📝 **Create Account Page**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  - Full name, phone, email, and password fields
+  - Validation for required fields
+  - Redirects to account settings on success
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🎨 **Reusable Components**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  - `InputBox` → reusable input with label
+  - `Button` → customizable with disabled state
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 🔄 **Routing**
+
+  - Powered by `react-router-dom`
+  - Smooth navigation between pages
+
+- 📱 **Responsive Design**
+  - Fully responsive with TailwindCSS
+  - Works on desktop, tablet, and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ [React](https://reactjs.org/) – Frontend library
+- 🔷 [TypeScript](https://www.typescriptlang.org/) – Static typing
+- 🎨 [TailwindCSS](https://tailwindcss.com/) – Styling
+- 🌐 [React Router](https://reactrouter.com/) – Routing
